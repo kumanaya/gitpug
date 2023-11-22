@@ -1,0 +1,387 @@
+{
+	"info": {
+		"_postman_id": "c8a76c6f-7b49-4cc5-ba95-427cba517dd1",
+		"name": "GitPug",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24547951"
+	},
+	"item": [
+		{
+			"name": "/user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"kumanaya\",\r\n    \"email\": \"daniel.kumanaya@hotmail.com\",\r\n    \"password\": \"1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"kumanaya\",\r\n    \"email\": \"daniel.kumanaya@hotmail.com\",\r\n    \"password\": \"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "290"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"122-z98kFp8xlUI7U78a/mLKoIzw3A4\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 22 Nov 2023 03:13:23 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"username\": \"kumanaya\",\n    \"email\": \"daniel.kumanaya@hotmail.com\",\n    \"password\": \"$2a$10$4wQgSY9vv8J.un2vUELAgeCmdSqdKwBWnpwe/6pLHiAgAD.J41khO\",\n    \"name\": \"Daniel Kumanaya\",\n    \"bio\": \"Software Engineer\",\n    \"twitter\": null,\n    \"company\": \"@worcoach\",\n    \"blog\": null,\n    \"followers\": 11,\n    \"following\": 30,\n    \"public_repos\": 13,\n    \"id\": 1\n}"
+				}
+			]
+		},
+		{
+			"name": "/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"daniel.kumanaya@hotmail.com\",\r\n    \"password\": \"1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/auth",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"kumanaya\",\r\n    \"email\": \"daniel.kumanaya@hotmail.com\",\r\n    \"password\": \"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "290"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"122-z98kFp8xlUI7U78a/mLKoIzw3A4\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 22 Nov 2023 03:13:23 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"username\": \"kumanaya\",\n    \"email\": \"daniel.kumanaya@hotmail.com\",\n    \"password\": \"$2a$10$4wQgSY9vv8J.un2vUELAgeCmdSqdKwBWnpwe/6pLHiAgAD.J41khO\",\n    \"name\": \"Daniel Kumanaya\",\n    \"bio\": \"Software Engineer\",\n    \"twitter\": null,\n    \"company\": \"@worcoach\",\n    \"blog\": null,\n    \"followers\": 11,\n    \"following\": 30,\n    \"public_repos\": 13,\n    \"id\": 1\n}"
+				}
+			]
+		},
+		{
+			"name": "/user",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoiZGFuaWVsLmt1bWFuYXlhQGhvdG1haWwuY29tIiwiaWF0IjoxNzAwNjU0Mzg4LCJleHAiOjE3MDA2NTc5ODh9.IB1d8IoTPGLAyV3a5gGsIfPtv4--GWzmfbnVyrm8nWg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/user/kumanaya",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"kumanaya"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"kumanaya\",\r\n    \"email\": \"daniel.kumanaya@hotmail.com\",\r\n    \"password\": \"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "290"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"122-z98kFp8xlUI7U78a/mLKoIzw3A4\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 22 Nov 2023 03:13:23 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"username\": \"kumanaya\",\n    \"email\": \"daniel.kumanaya@hotmail.com\",\n    \"password\": \"$2a$10$4wQgSY9vv8J.un2vUELAgeCmdSqdKwBWnpwe/6pLHiAgAD.J41khO\",\n    \"name\": \"Daniel Kumanaya\",\n    \"bio\": \"Software Engineer\",\n    \"twitter\": null,\n    \"company\": \"@worcoach\",\n    \"blog\": null,\n    \"followers\": 11,\n    \"following\": 30,\n    \"public_repos\": 13,\n    \"id\": 1\n}"
+				}
+			]
+		},
+		{
+			"name": "/user/:id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoiZGFuaWVsLmt1bWFuYXlhQGhvdG1haWwuY29tIiwiaWF0IjoxNzAwNjUzNDk2LCJleHAiOjE3MDA2NTcwOTZ9._8lcb556nVDvXteTHysWFctz1m4CA85KDhnilKFSFiM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"facebook\",\r\n    \"email\": \"daniel.kumanaya@hotmail.com\",\r\n    \"password\": \"1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/user/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"kumanaya\",\r\n    \"email\": \"daniel.kumanaya@hotmail.com\",\r\n    \"password\": \"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "290"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"122-z98kFp8xlUI7U78a/mLKoIzw3A4\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 22 Nov 2023 03:13:23 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"username\": \"kumanaya\",\n    \"email\": \"daniel.kumanaya@hotmail.com\",\n    \"password\": \"$2a$10$4wQgSY9vv8J.un2vUELAgeCmdSqdKwBWnpwe/6pLHiAgAD.J41khO\",\n    \"name\": \"Daniel Kumanaya\",\n    \"bio\": \"Software Engineer\",\n    \"twitter\": null,\n    \"company\": \"@worcoach\",\n    \"blog\": null,\n    \"followers\": 11,\n    \"following\": 30,\n    \"public_repos\": 13,\n    \"id\": 1\n}"
+				}
+			]
+		}
+	]
+}

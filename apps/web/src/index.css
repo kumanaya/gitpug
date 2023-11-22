@@ -1,0 +1,19 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+html {
+  height: -webkit-fill-available;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  /* mobile viewport bug fix */
+  min-height: -webkit-fill-available;
+}
+
+@supports (-webkit-touch-callout: none) {
+  .h-screen {
+    height: -webkit-fill-available;
+  }
+}
